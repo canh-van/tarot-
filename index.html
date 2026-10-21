@@ -1,89 +1,578 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cảm nhận chiều sâu trái tim bạn — không gian Tarot dành cho chiêm nghiệm và khám phá bản thân.">
-  <title>Cảm nhận chiều sâu trái tim bạn</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cảm nhận chiều sâu trái tim bạn</title>
+    <meta name="description" content="Một không gian tarot dành cho chiêm nghiệm, lắng nghe bản thân và khám phá những câu hỏi trong lòng.">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="stars" aria-hidden="true"></div>
 
-  <header class="site-header">
-    <a class="brand" href="index.html">
-      <span class="brand-symbol">☾</span>
-      <span>
-        <strong>Cảm nhận chiều sâu</strong>
-        <small>trái tim bạn</small>
-      </span>
-    </a>
-    <button class="menu-toggle" aria-label="Mở menu">☰</button>
-    <nav class="nav">
-      <a class="active" href="index.html">Trang chủ</a>
-      <a href="tarot.html">Trải bài</a>
-      <a href="dich-vu.html">Dịch vụ</a>
-      <a href="nhat-ky.html">Nhật ký tâm hồn</a>
-      <a href="ve-chung-toi.html">Về chúng tôi</a>
-      <a href="lien-he.html">Liên hệ</a>
-    </nav>
-  </header>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+    <div class="container header-inner">
 
-  <main>
-    <section class="hero">
-      <div class="moon-glow">☾</div>
-      <p class="eyebrow">TAROT • REFLECTION • INNER JOURNEY</p>
-      <h1>Có những câu trả lời<br><em>chỉ trái tim bạn</em> mới thực sự cảm nhận được.</h1>
-      <p class="hero-text">Một góc nhỏ để bạn chậm lại, lắng nghe những điều đang diễn ra bên trong và nhìn một câu hỏi từ một góc độ khác.</p>
-      <div class="hero-actions">
-        <a class="btn btn-gold" href="tarot.html">Khám phá trải bài ✦</a>
-        <a class="btn btn-outline" href="dich-vu.html">Tìm hiểu dịch vụ</a>
-      </div>
-      <div class="hero-note">Tarot là công cụ chiêm nghiệm và tham khảo, không phải lời tiên đoán chắc chắn.</div>
-    </section>
+        <a href="index.html" class="logo">
+            <span class="logo-symbol">☾</span>
+            <span>Cảm nhận chiều sâu trái tim bạn</span>
+        </a>
 
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">EXPLORE</p>
-        <h2>Một câu hỏi. Một khoảnh khắc. Một góc nhìn mới.</h2>
-        <p>Chọn điều bạn muốn lắng nghe hôm nay.</p>
-      </div>
-      <div class="topic-grid">
-        <a class="topic-card" href="tarot.html?topic=love"><span>♡</span><h3>Tình yêu</h3><p>Cảm xúc, ranh giới và những điều còn chưa được nói ra.</p></a>
-        <a class="topic-card" href="tarot.html?topic=self"><span>☾</span><h3>Bản thân</h3><p>Nhìn lại cảm xúc, nhu cầu và hành trình trưởng thành.</p></a>
-        <a class="topic-card" href="tarot.html?topic=relationships"><span>✧</span><h3>Mối quan hệ</h3><p>Khám phá cách bạn nhìn một mối quan hệ từ nhiều góc độ.</p></a>
-        <a class="topic-card" href="tarot.html?topic=study"><span>✦</span><h3>Học tập & công việc</h3><p>Động lực, trở ngại và hướng hành động có thể cân nhắc.</p></a>
-      </div>
-    </section>
+        <button class="menu-toggle" aria-label="Mở menu">
+            ☰
+        </button>
 
-    <section class="quote-section">
-      <div class="quote-mark">“</div>
-      <blockquote>Tarot không quyết định con đường của bạn. Nó chỉ giúp bạn nhìn rõ hơn những điều mình đang mang theo.</blockquote>
-      <p>— Một lời nhắc để trở về với chính mình</p>
-    </section>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Trang chủ</a>
+            <a href="tarot.html">Trải bài</a>
+            <a href="dich-vu.html">Dịch vụ</a>
+            <a href="nhat-ky.html">Nhật ký tâm hồn</a>
+            <a href="ve-chung-toi.html">Về chúng tôi</a>
+            <a href="lien-he.html">Liên hệ</a>
+        </nav>
 
-    <section class="section service-preview">
-      <div class="section-heading">
-        <p class="eyebrow">PRIVATE READING</p>
-        <h2>Nếu bạn muốn một không gian riêng tư hơn</h2>
-      </div>
-      <div class="service-row">
-        <div><span class="service-icon">♢</span><h3>Trải bài riêng</h3><p>Những câu hỏi cụ thể về tình yêu, mối quan hệ, nội tâm, học tập và định hướng.</p></div>
-        <div><span class="service-icon">✦</span><h3>Trải bài chuyên sâu</h3><p>Một phiên dài hơn để cùng nhìn lại câu hỏi từ nhiều khía cạnh.</p></div>
-        <div><span class="service-icon">☽</span><h3>Góc chiêm nghiệm</h3><p>Không phán xét, không áp đặt. Tập trung vào điều bạn có thể chủ động lựa chọn.</p></div>
-      </div>
-      <a class="text-link" href="dich-vu.html">Xem toàn bộ dịch vụ →</a>
-    </section>
-  </main>
+    </div>
+</header>
 
-  <footer class="footer">
-    <div><strong>Cảm nhận chiều sâu trái tim bạn</strong><p>Một góc nhỏ cho những câu hỏi ở bên trong.</p></div>
-    <div><a href="lien-he.html">Liên hệ</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="nhat-ky.html">Nhật ký</a></div>
-    <div class="disclaimer">Tarot chỉ mang tính tham khảo và tự chiêm nghiệm. Không thay thế tư vấn y tế, tâm lý, pháp lý hoặc tài chính.</div>
-  </footer>
-  <script src="js/main.js"></script>
+
+<!-- ================= HERO ================= -->
+<main>
+
+<section class="hero">
+
+    <div class="hero-stars"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-symbol">
+            ☾
+        </div>
+
+        <p class="eyebrow">
+            TAROT • REFLECTION • INNER JOURNEY
+        </p>
+
+        <h1>
+            Có những câu trả lời
+            <em>chỉ trái tim bạn</em>
+            mới thực sự cảm nhận được.
+        </h1>
+
+        <p class="hero-description">
+            Một góc nhỏ để bạn chậm lại, lắng nghe những điều đang diễn ra
+            bên trong và nhìn một câu hỏi từ một góc độ khác.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="tarot.html" class="btn btn-primary">
+                Khám phá trải bài ✦
+            </a>
+
+            <a href="dich-vu.html" class="btn btn-outline">
+                Tìm hiểu dịch vụ
+            </a>
+        </div>
+
+        <p class="hero-note">
+            Tarot là công cụ chiêm nghiệm và tham khảo,
+            không phải lời tiên đoán chắc chắn.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPLORE ================= -->
+<section class="section explore-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">EXPLORE</p>
+
+            <h2>
+                Một câu hỏi.
+                Một khoảnh khắc.
+                Một góc nhìn mới.
+            </h2>
+
+            <p>
+                Chọn điều bạn muốn lắng nghe hôm nay.
+            </p>
+        </div>
+
+
+        <div class="topic-grid">
+
+            <!-- TÌNH YÊU -->
+            <a href="tarot.html?topic=love" class="topic-card">
+
+                <div class="topic-icon">
+                    ♡
+                </div>
+
+                <div>
+                    <span class="card-number">01</span>
+
+                    <h3>Tình yêu</h3>
+
+                    <p>
+                        Cảm xúc, ranh giới và những điều
+                        còn chưa được nói ra.
+                    </p>
+                </div>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+
+
+            <!-- BẢN THÂN -->
+            <a href="tarot.html?topic=self" class="topic-card">
+
+                <div class="topic-icon">
+                    ☾
+                </div>
+
+                <div>
+                    <span class="card-number">02</span>
+
+                    <h3>Bản thân</h3>
+
+                    <p>
+                        Nhìn lại cảm xúc, nhu cầu và
+                        hành trình trưởng thành.
+                    </p>
+                </div>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+
+
+            <!-- MỐI QUAN HỆ -->
+            <a href="tarot.html?topic=relationship" class="topic-card">
+
+                <div class="topic-icon">
+                    ♧
+                </div>
+
+                <div>
+                    <span class="card-number">03</span>
+
+                    <h3>Mối quan hệ</h3>
+
+                    <p>
+                        Hiểu một tình huống từ nhiều
+                        góc độ và lắng nghe điều chưa nói.
+                    </p>
+                </div>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+
+
+            <!-- HỌC TẬP -->
+            <a href="tarot.html?topic=study" class="topic-card">
+
+                <div class="topic-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <span class="card-number">04</span>
+
+                    <h3>Học tập & định hướng</h3>
+
+                    <p>
+                        Động lực, trở ngại và những điều
+                        bạn có thể chủ động thay đổi.
+                    </p>
+                </div>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+
+
+            <!-- THÔNG ĐIỆP -->
+            <a href="tarot.html?topic=daily" class="topic-card">
+
+                <div class="topic-icon">
+                    ✧
+                </div>
+
+                <div>
+                    <span class="card-number">05</span>
+
+                    <h3>Thông điệp hôm nay</h3>
+
+                    <p>
+                        Một lá bài và một câu hỏi nhỏ
+                        để bạn dành thời gian cho chính mình.
+                    </p>
+                </div>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+
+
+            <!-- TRẢI BÀI -->
+            <a href="tarot.html" class="topic-card featured-card">
+
+                <div class="topic-icon">
+                    🃏
+                </div>
+
+                <div>
+                    <span class="card-number">06</span>
+
+                    <h3>Tự trải bài</h3>
+
+                    <p>
+                        Xào bài, chọn lá và lật bài để
+                        bắt đầu một khoảnh khắc chiêm nghiệm.
+                    </p>
+                </div>
+
+                <span class="card-arrow">↗</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK TAROT ================= -->
+<section class="section tarot-preview">
+
+    <div class="container tarot-preview-inner">
+
+        <div class="tarot-preview-text">
+
+            <p class="eyebrow">
+                YOUR MOMENT
+            </p>
+
+            <h2>
+                Bạn đang mang theo
+                câu hỏi nào trong lòng?
+            </h2>
+
+            <p>
+                Không cần phải có một câu hỏi hoàn hảo.
+                Chỉ cần một điều bạn thực sự muốn hiểu rõ hơn.
+            </p>
+
+            <a href="tarot.html" class="btn btn-primary">
+                Bắt đầu trải bài
+            </a>
+
+        </div>
+
+
+        <div class="tarot-preview-card">
+
+            <div class="tarot-glow"></div>
+
+            <div class="tarot-card-back">
+                <span>✦</span>
+                <strong>☾</strong>
+                <span>✦</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+<section class="quote-section">
+
+    <div class="container">
+
+        <div class="quote-mark">“</div>
+
+        <blockquote>
+            Đôi khi điều chúng ta cần không phải
+            là một câu trả lời,
+            mà là một khoảng lặng đủ sâu
+            để nghe thấy chính mình.
+        </blockquote>
+
+        <p>
+            — Một lời nhắc dành cho hành trình của bạn
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+<section class="section services-preview">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                PRIVATE READING
+            </p>
+
+            <h2>
+                Nếu bạn muốn đi sâu hơn
+            </h2>
+
+            <p>
+                Những phiên xem riêng được thiết kế như
+                một không gian trò chuyện và chiêm nghiệm.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <span class="service-number">01</span>
+
+                <h3>
+                    Tarot tình yêu
+                </h3>
+
+                <p>
+                    Khám phá cảm xúc, nhu cầu,
+                    ranh giới và góc nhìn của chính bạn
+                    trong một mối quan hệ.
+                </p>
+
+                <a href="dich-vu.html">
+                    Tìm hiểu thêm →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <span class="service-number">02</span>
+
+                <h3>
+                    Tarot nội tâm
+                </h3>
+
+                <p>
+                    Một không gian để nhìn lại cảm xúc,
+                    những điều đang khiến bạn băn khoăn
+                    và hướng phát triển của bản thân.
+                </p>
+
+                <a href="dich-vu.html">
+                    Tìm hiểu thêm →
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <span class="service-number">03</span>
+
+                <h3>
+                    Tarot học tập
+                </h3>
+
+                <p>
+                    Chiêm nghiệm về động lực,
+                    trở ngại và những bước đi bạn
+                    có thể chủ động thực hiện.
+                </p>
+
+                <a href="dich-vu.html">
+                    Tìm hiểu thêm →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNAL ================= -->
+<section class="section journal-preview">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                SOUL JOURNAL
+            </p>
+
+            <h2>
+                Nhật ký tâm hồn
+            </h2>
+
+            <p>
+                Những bài viết nhỏ về tarot,
+                tình yêu, trưởng thành và hành trình
+                hiểu chính mình.
+            </p>
+
+        </div>
+
+
+        <div class="journal-actions">
+
+            <a href="nhat-ky.html" class="btn btn-outline">
+                Đọc nhật ký
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DISCLAIMER ================= -->
+<section class="disclaimer-section">
+
+    <div class="container">
+
+        <div class="disclaimer-box">
+
+            <span>✦</span>
+
+            <p>
+                Tarot trên website này được sử dụng như một
+                công cụ chiêm nghiệm và giải trí.
+                Nội dung không nhằm thay thế tư vấn y tế,
+                tâm lý, pháp lý hoặc tài chính chuyên môn.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span class="logo-symbol">☾</span>
+                <span>Cảm nhận chiều sâu trái tim bạn</span>
+            </a>
+
+            <p>
+                Một không gian nhỏ để bạn chậm lại,
+                lắng nghe và hiểu mình hơn.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Khám phá</h4>
+
+            <a href="tarot.html">Trải bài</a>
+            <a href="dich-vu.html">Dịch vụ</a>
+            <a href="nhat-ky.html">Nhật ký tâm hồn</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Về trang</h4>
+
+            <a href="ve-chung-toi.html">Về chúng tôi</a>
+            <a href="lien-he.html">Liên hệ</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Kết nối</h4>
+
+            <!-- THAY LINK THẬT CỦA BẠN SAU -->
+            <a href="#" target="_blank">
+                Facebook
+            </a>
+
+            <a href="#" target="_blank">
+                Instagram
+            </a>
+
+            <a href="mailto:your-email@example.com">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Cảm nhận chiều sâu trái tim bạn.
+                All rights reserved.
+            </p>
+
+            <p>
+                Tarot • Reflection • Inner Journey
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= BACK TO TOP ================= -->
+<button id="backToTop" class="back-to-top" aria-label="Về đầu trang">
+    ↑
+</button>
+
+
+<!-- JAVASCRIPT -->
+<script src="main.js"></script>
+
 </body>
 </html>
