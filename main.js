@@ -1,0 +1,9 @@
+// JS dùng chung: menu mobile và một vài tiện ích nhẹ.
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => nav.classList.toggle("open"));
+    nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
+  }
+});

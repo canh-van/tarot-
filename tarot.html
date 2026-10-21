@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trải bài Tarot | Cảm nhận chiều sâu trái tim bạn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-symbol">☾</span><span><strong>Cảm nhận chiều sâu</strong><small>trái tim bạn</small></span></a>
+  <button class="menu-toggle" aria-label="Mở menu">☰</button>
+  <nav class="nav">
+    <a href="index.html">Trang chủ</a><a class="active" href="tarot.html">Trải bài</a><a href="dich-vu.html">Dịch vụ</a><a href="nhat-ky.html">Nhật ký tâm hồn</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="lien-he.html">Liên hệ</a>
+  </nav>
+</header>
+
+<main class="tarot-page">
+  <section class="tarot-intro">
+    <p class="eyebrow">THE READING ROOM</p>
+    <h1>Chọn một câu hỏi,<br><em>rồi để những lá bài kể một câu chuyện.</em></h1>
+    <p>Hãy xem đây như một khoảng lặng để bạn tự nhìn lại mình. Không có lá bài nào quyết định thay bạn.</p>
+  </section>
+
+  <section class="reading-panel">
+    <div class="controls">
+      <label>Chủ đề
+        <select id="topicSelect">
+          <option value="love">Tình yêu & mối quan hệ</option>
+          <option value="self">Bản thân & nội tâm</option>
+          <option value="relationships">Bạn bè & các mối quan hệ</option>
+          <option value="study">Học tập & công việc</option>
+          <option value="daily">Thông điệp trong ngày</option>
+        </select>
+      </label>
+      <label>Kiểu trải
+        <select id="spreadSelect">
+          <option value="one">Một lá — hiện tại</option>
+          <option value="three">Ba lá — quá khứ / hiện tại / hướng đi</option>
+          <option value="love3">Tình yêu — cảm xúc / điều cần chú ý / lời khuyên</option>
+          <option value="four">Bốn lá — bản thân / hoàn cảnh / thử thách / hành động</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="shuffle-zone">
+      <div class="shuffle-deck" id="shuffleDeck" aria-label="Bộ bài Tarot">
+        <div class="deck-card d1"></div><div class="deck-card d2"></div><div class="deck-card d3"></div><div class="deck-card d4"></div><div class="deck-card d5"></div>
+      </div>
+      <p id="statusText">Hãy xào bài trước khi bắt đầu.</p>
+      <button class="btn btn-gold" id="shuffleBtn">✦ Xào bài</button>
+    </div>
+
+    <div class="draw-area" id="drawArea" hidden>
+      <p class="draw-instruction" id="drawInstruction">Chọn lá bài đầu tiên.</p>
+      <div class="draw-deck" id="drawDeck"></div>
+    </div>
+
+    <div class="spread-result" id="spreadResult"></div>
+
+    <div class="reading-actions">
+      <button class="btn btn-outline" id="newReadingBtn">Trải lại</button>
+      <button class="btn btn-outline" id="reshuffleBtn">Xào lại</button>
+    </div>
+
+    <div class="tarot-disclaimer">
+      <strong>Một lời nhắc:</strong> Trải bài này chỉ nhằm mục đích tham khảo và tự chiêm nghiệm. Nó không thể xác nhận suy nghĩ, cảm xúc hoặc tương lai chắc chắn của người khác.
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><strong>Cảm nhận chiều sâu trái tim bạn</strong><p>Tarot • Reflection • Inner Journey</p></div>
+  <div class="disclaimer">Không thay thế tư vấn y tế, tâm lý, pháp lý hoặc tài chính.</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/tarot.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

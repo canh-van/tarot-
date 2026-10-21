@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Nhật ký tâm hồn</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="site-header"><a class="brand" href="index.html"><span class="brand-symbol">☾</span><span><strong>Cảm nhận chiều sâu</strong><small>trái tim bạn</small></span></a><button class="menu-toggle">☰</button><nav class="nav"><a href="index.html">Trang chủ</a><a href="tarot.html">Trải bài</a><a href="dich-vu.html">Dịch vụ</a><a class="active" href="nhat-ky.html">Nhật ký tâm hồn</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="lien-he.html">Liên hệ</a></nav></header>
+<main><section class="page-heading"><p class="eyebrow">SOUL JOURNAL</p><h1>Những điều đáng để ngồi lại và lắng nghe.</h1><p>Các bài viết được lưu trong <code>data/articles.json</code>. Bạn có thể thêm bài mới sau này.</p></section><section class="article-grid" id="articleGrid"><p class="empty-state">Đang tải những trang nhật ký...</p></section></main>
+<footer class="footer"><div><strong>Cảm nhận chiều sâu trái tim bạn</strong></div><div class="disclaimer">Nội dung mang tính chiêm nghiệm, không thay thế tư vấn chuyên môn.</div></footer>
+<script src="js/main.js"></script><script>
+fetch('data/articles.json').then(r=>r.json()).then(articles=>{
+ const grid=document.getElementById('articleGrid'); grid.innerHTML='';
+ articles.forEach(a=>grid.insertAdjacentHTML('beforeend',`<article class="article-card"><div class="article-cover">${a.symbol}</div><div class="article-body"><span>${a.category}</span><h2>${a.title}</h2><p>${a.excerpt}</p><button class="text-link" onclick="alert(${JSON.stringify(a.content)})">Đọc tiếp →</button></div></article>`));
+}).catch(()=>document.getElementById('articleGrid').innerHTML='<p class="empty-state">Chưa có bài viết hoặc không thể tải dữ liệu.</p>');
+</script></body></html>

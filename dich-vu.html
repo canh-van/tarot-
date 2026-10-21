@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Dịch vụ | Cảm nhận chiều sâu trái tim bạn</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body><header class="site-header"><a class="brand" href="index.html"><span class="brand-symbol">☾</span><span><strong>Cảm nhận chiều sâu</strong><small>trái tim bạn</small></span></a><button class="menu-toggle">☰</button><nav class="nav"><a href="index.html">Trang chủ</a><a href="tarot.html">Trải bài</a><a class="active" href="dich-vu.html">Dịch vụ</a><a href="nhat-ky.html">Nhật ký tâm hồn</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="lien-he.html">Liên hệ</a></nav></header>
+<main><section class="page-heading"><p class="eyebrow">PRIVATE READING</p><h1>Những phiên xem dành riêng cho câu hỏi của bạn.</h1><p>Giá dưới đây là dữ liệu mẫu để bạn thay bằng thông tin thật trước khi công khai website.</p></section>
+<section class="service-grid" id="serviceGrid"></section></main>
+<footer class="footer"><div><strong>Cảm nhận chiều sâu trái tim bạn</strong><p>Một không gian riêng cho những câu hỏi bên trong.</p></div><div class="disclaimer">Giá và thông tin dịch vụ cần được chủ website kiểm tra trước khi công bố.</div></footer>
+<script src="js/data.js"></script><script src="js/main.js"></script><script>
+const grid=document.getElementById('serviceGrid');
+services.forEach(s=>{grid.insertAdjacentHTML('beforeend',`<article class="service-card"><span class="service-icon">${s.icon}</span><h2>${s.name}</h2><p>${s.description}</p><ul><li>${s.audience}</li><li>${s.scope}</li><li>${s.duration}</li></ul><div class="price">${s.price}</div><a class="btn btn-outline" href="lien-he.html">Tìm hiểu thêm</a></article>`)});
+</script></body></html>
